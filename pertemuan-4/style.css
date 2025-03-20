@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h2, h4 {
+    text-align: center;
+    color: #007bff;
+}
+
+hr {
+    border: 1px solid #007bff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #004080);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+input[type="text"], textarea {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
