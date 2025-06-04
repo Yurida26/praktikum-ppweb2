@@ -11,9 +11,11 @@
 
   <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
     <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">Welcome Back</h2>
-    
+    @if (session("error"))
+        <p style="color: red">{{ session("error") }}</p>
+    @endif
     <form method="POST">
-        @csrf
+     @csrf
       <div class="mb-4">
         <label class="block text-sm mb-1">Email or Username</label>
         <input type="text" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" placeholder="you@example.com" />
